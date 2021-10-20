@@ -1,0 +1,18 @@
+#Première-partie h3 {color: grey}
+#Première-partie blockquote p::first-letter{color: brown; font-weight: bold; font-family: fantasy; font-size: 250%}
+
+#Seconde-partie p  {color: red; font-size: smaller;}
+#Seconde-partie  h2 {color: red;font-size: smaller;}
+#Seconde-partie h3 {color: red;font-size: smaller;}
+#Seconde-parite cite  {color: red;font-size: smaller;}
+
+html{font-family:trebuchet,calibri,serif; background-color: grey;}
+h1,h2,h3{font-family: monospace; }
+blockquote{margin-left: 5em;}
+th{text-decoration: underline;}
+#basdelapage{background-color: #AAAAAA;}
+#image {position: absolute;bottom:0;right:0;background-repeat: repeat-y;}
+#border{border: ridge green;padding:4ex;}
+#petit-texte{float: right;}
+li{list-style-type: lower-alpha;}
+ol{list-style-type: circle;}

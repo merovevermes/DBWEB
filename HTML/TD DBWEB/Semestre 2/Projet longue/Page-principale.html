@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Blog DBWEB</title>
+<link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-purple.css">
+<script src="ScriptJV.js"></script>
+
+	
+
+</head>
+
+<body>
+    <header class="w3-theme-l3 w3-row">
+	<button class="w3-button w3-theme-l3 w3-xlarge w3-margin w3-quarter" onClick="w3_open()">☰</button>
+		<div class="w3-sidebar w3-bar-block w3-border-right w3-threequarter" style="display: none;" id="mySidebar">
+			<button onclick="w3_close()" class="w3-bar-item w3-large" onMouseOver="">Close &times;</button>
+				<a href="" class="w3-bar-item w3-button">Contenu de Présentation</a>
+				<a href="" class="w3-bar-item w3-button">Liste des messages</a>
+				<a href="" class="w3-bar-item w3-button">Formulaire</a>
+		</div>
+    <h1 class="w3-padding w3-margin w3-container w3-third" style="display: inline; ">Voici le blog de mérové</h1>
+    <div class="w3-right w3-margin w3-third">
+		<label for="Pseudo">Veuillez saisir votre pseudo</label>
+		<input id="Pseudo" class="w3-margin" style="" type="text" placeholder="Pseudo"></div>
+		<div class="w3-right w3-margin w3-third"><label for="Search" >Tapez votre rechercher ici</label>
+		<input id="Search" class="w3-margin" style="" type="search" placeholder="Search"></div>
+		
+    </header>
+	
+		<?php
+		echo "My first PHP script!";
+		?>
+		<p>la il y a le contenu du site </p>
+	
+	<div class="w3-card w3-third w3-theme">il doit y avoir un poste afficher ici </div>
+	<div class="w3-card w3-third w3-theme">il doit y avoir un poste afficher ici </div>
+	<div class="w3-card w3-third w3-theme">il doit y avoir un poste afficher ici </div>
+	
+	
+	<br>
+	<footer class="w3-padding w3-theme-l1"><p>mettre le nombre d'article</p></footer>
+</body>
+</html>

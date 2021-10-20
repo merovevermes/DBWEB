@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<link href="TP2-formulaire.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
+<script src="Form.js"></script>
+</head>
+    
+
+<body>
+    <h1 class="w3-theme"> Bienvenue sur ma page </h1>
+    <button type="button" id="myBtn" onClick="document.getElementById("myMobal").style.display = "block";"> Info</button>
+       <div id="myModal" class="modal" style="display: block">
+        <div class="w3-cards-4 w3-text-theme " style="margin: 10px; box-shadow: 0px 15px 15px 3px grey;">
+		
+      <form method="get" action="TP2-formulaire.html" class="" style="padding: 20px; margin: 20px;" name="Form1" id="Form1">
+        <h1 class="w3-theme" style="padding-bottom: 10px; padding-left: 10px; padding-right: 10px; padding-top: 10px;"> Voici le formulaire</h1>
+        <div style="margin: 10px;"><label for="Nom">Nom</label>
+          <input type="text" name="Nom" id="Nom" style="display: block;" class="w3-input" >
+          </div>
+        
+        <div style="margin: 10px;"><label for="Prenom">Prénom</label>
+          <input type="text" name="Prenom" id="Prenom" style="display:block;" class="w3-input"></div>
+        <div style="margin: 10px;">
+            <label for="Age">Age</label>
+          <input type="texte" name="Age" id="Age" style="display:block;" class="w3-input">
+        <button  type="button" onClick="verifAge()">Verife age</button>
+        </div>   
+        <div style="margin: 10px;">
+            <label for="e-mail">E-mail</label>
+            <input type="email" name="E-mail" id="E-mail" placeholder="nom.prenom@univ-avignon.fr" style="display:block;" class="w3-input">
+            <button type="button" onClick="verifMail()">Verife Mail</button>
+          </div>
+        <div style="margin: 10px;">
+          <label for="MDP">Mots de passe</label>
+          <input type="password" name="MDP" id="MDP" style="display:block;" class="w3-input">
+        </div>
+        <div style="margin: 10px;">
+          <label for="Confirmation-MDP">Confirmer le mots de passe</label>
+          <input type="password" name="Confirmation-MDP" id="Confirmation-MDP" style="display:block;" class="w3-input">
+        </div>
+        <div style="margin: 10px;"> 
+          <label for="Genre" style="display: block;">choisisais un Genre</label>
+          <input type="radio" name="Genre" id="genrefemmes">
+			<label for="genrefemmes" > Femmes</label>
+			<p></p>
+          <input type="radio" name="genre" id="genrehomme" > 
+          	<label for="genrehomme"> Homme</label>
+          </div>
+        
+        <div style="margin: 10px;">
+          <label for="passion">Choisisais votre passion</label>
+          <p></p>
+          <input type="checkbox" name="Passion" id="Passion1"> foot
+          <input type="checkbox" name="Passion" id="Passion2"> Baskette
+          <p></p>
+          <input type="checkbox" name="Passion" id="Passion3"> Ski
+          <input type="checkbox" name="Passion" id="Passion4"> randonnée
+        </div>
+        <div style="margin: 10px;" > 
+          <label for="choixproffesion" >Choix de profession</label>
+          <select id="choixproffesion" class="w3-input">
+            
+            <option value="Dc">Medecin</option>
+            <option value="Profs" selected>Profeseur</option>
+            <option value="Info">Informatitiens</option>
+            <option value="elec">electricien</option>
+            </select>
+            <p></p>
+            <label for="Autre">Autre, précisez :</label>
+            <input type="text" id="autre"> 
+            <p></p>
+            <button type="button" onClick="ajouteroption()">envoyer</button>
+                    
+          <p></p>
+          <select size="4" class="w3-input">
+            <option value="Train">Train</option>
+            <option value="Voiture">Voiture</option>
+            <option value="Vélo"> Vélo </option>
+            <option value="trotinette">Trotinette</option>
+            </select>
+          
+        </div>
+		<div style="margin: 10px;"> 
+          <label for="Commentaire"> Mettez cotre commentaire ici</label>
+          <p></p>
+          <textarea rows="3" name="Commentaire" id="Commentaire" class="w3-input"></textarea>
+        </div>
+		  
+		<button type="button" class="w3-theme  w3-button" onClick="verifAge(); verifMail(); VerifSubmit()">Envoyer</button>
+        <button type="reset" class="w3-theme w3-button">Réinitialiser</button>
+        </form>
+    </div>
+    </div>
+    <script>valeurpardefaut(); SendEnter();modal();</script>
+    
+</body>
+</html>
